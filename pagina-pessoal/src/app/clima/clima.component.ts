@@ -1,5 +1,5 @@
-import { ServicoService } from '../../services/servico.service';
-import { JsonDTO } from '../../dto/JsonDTO';
+import { ServicoService } from '../services/servico.service';
+import { JsonDTO } from '../dto/JsonDTO';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -26,7 +26,6 @@ export class ClimaComponent implements OnInit {
     this.lon = 0;
     this.cont = 0;
     this.isAvaliable = false;
-    this.card = "card-clima-menor";
     this.imageFile = '';
     this.getCoord();
   }
@@ -40,8 +39,10 @@ export class ClimaComponent implements OnInit {
         this.lon = position.coords.longitude;
         this.servicoService.obterClima(this.lat, this.lon).subscribe(data => {
           this.jsonModel = data;
+          this.jsonModel.main.temp = parseFloat(this.jsonModel.main.temp.toFixed(1));
+          this.jsonModel.main.temp_min = parseFloat(this.jsonModel.main.temp_min.toFixed(1));
+          this.jsonModel.main.temp_max = parseFloat(this.jsonModel.main.temp_max.toFixed(1));
           this.setImage();
-          this.card = "card-clima";
         });
       });
     } else {

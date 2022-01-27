@@ -1,3 +1,156 @@
+<div class=" p-2">
+    <div class="text-center">
+        <ng-template [ngIf]="isAvaliable" [ngIfElse]="cidade">
+            <div>
+                <h3 class="text-dark display-5">{{this.jsonModel.name}}</h3>
+            </div>
+        </ng-template>
+
+        <ng-template #cidade>
+            <div>
+                <p><b></b></p>
+            </div>
+        </ng-template>
+    </div>
+
+    <div class="row">
+        <div class="col-1 col-md-3"></div>
+        <div class="col-5 col-md-3 text-right">
+            <ng-template [ngIf]="isAvaliable" [ngIfElse]="imagem">
+                <div>
+                    <img class="imagem-clima-atual my-auto img-responsive" [src]="this.imageFile" alt="">
+                </div>
+            </ng-template>
+
+            <ng-template #imagem>
+                <div>
+
+                </div>
+            </ng-template>
+        </div>
+        <div class="col-2 col-md-1 my-auto text-left">
+            <ng-template [ngIf]="isAvaliable" [ngIfElse]="temperatura">
+                <div>
+                    <h4 class="display-5"> {{this.jsonModel.main.temp}}º</h4>
+                </div>
+            </ng-template>
+
+            <ng-template #temperatura>
+                <div>
+                </div>
+            </ng-template>
+        </div>
+        <div class="col-5"></div>
+    </div>
+
+    <div class="row border-bottom">
+        <div class="col-6 text-center">
+            <ng-template [ngIf]="isAvaliable" [ngIfElse]="minima">
+                <div>
+                    <h4 class="display-5"> Min: {{this.jsonModel.main.temp_min}}º</h4>
+                </div>
+            </ng-template>
+
+            <ng-template #minima>
+                <div>
+                </div>
+            </ng-template>
+        </div>
+
+        <div class="col-6 text-center">
+            <ng-template [ngIf]="isAvaliable" [ngIfElse]="maxima">
+                <div>
+                    <h4 class="display-5"> Max: {{this.jsonModel.main.temp_max}}º</h4>
+                </div>
+            </ng-template>
+
+            <ng-template #maxima>
+                <div>
+                </div>
+            </ng-template>
+        </div>
+    </div>
+
+    <div class="row border-bottom">
+        <div class="col-6">
+                <div>
+                    <span> Vento:</span>
+                </div>
+        </div>
+        <div class="col-6 text-right">
+            <ng-template [ngIf]="isAvaliable" [ngIfElse]="vento">
+                <div>
+                    <span>{{this.jsonModel.wind.speed}} Km/h</span>
+                </div>
+            </ng-template>
+
+            <ng-template #vento>
+            </ng-template>
+        </div>
+    </div>
+
+    <div class="row border-bottom">
+        <div class="col-6">
+                <div>
+                    <span> Umidade:</span>
+                </div>
+        </div>
+        <div class="col-6 text-right">
+            <ng-template [ngIf]="isAvaliable" [ngIfElse]="umidade">
+                <div>
+                    <span>{{this.jsonModel.main.humidity}} %</span>
+                </div>
+            </ng-template>
+
+            <ng-template #umidade>
+            </ng-template>
+        </div>
+    </div>
+
+    <div class="row border-bottom">
+        <div class="col-6">
+                <div>
+                    <span> Pressão:</span>
+                </div>
+        </div>
+        <div class="col-6 text-right">
+            <ng-template [ngIf]="isAvaliable" [ngIfElse]="pressao">
+                <div>
+                    <span>{{this.jsonModel.main.pressure}} hPa</span>
+                </div>
+            </ng-template>
+
+            <ng-template #pressao>
+            </ng-template>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+
+
+
 <div class="{{this.card}} p-4">
     <div class="row">
         <div class="col-8" id="cidade">
@@ -42,7 +195,7 @@
 
         </div>
         <div class="col-8 my-auto">
-            <!--<p class="w-25"><b>{{this.jsonModel.weather[0].description}}</b></p>-->
+            <!--<p class="w-25"><b>{{this.jsonModel.weather[0].description}}</b></p>
             <ng-template [ngIf]="isAvaliable" [ngIfElse]="ceu">
                 <div>
                     <p class="text-capitalize"><b>{{this.jsonModel.weather[0].description}}</b></p>
@@ -141,8 +294,7 @@
     </div>
 
     <br>
-    <!-- http://openweathermap.org/img/w/10d.png -->
-    <!--<div class="" ><p>Teste {{ this.jsonModel.name }} </p></div>-->
+   
 
     <div>
         <p>Clique no botão para fornecer sua localização em Latitude e Longitude:</p>
@@ -150,3 +302,4 @@
     </div>
 
 </div>
+-->

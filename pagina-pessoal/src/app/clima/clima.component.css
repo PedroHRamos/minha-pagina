@@ -1,46 +1,6 @@
-body{
-    font-family: Segoe UI, Segoe WP, Arial, Sans-Serif;
-    background-color: white;
-    height: 100% !important;
-}
 
 .imagem-clima-atual{
     height: 100px;
     width: 100px;
     margin-bottom: 50px;
-}
-
-p{
-    color:white;
-}
-
-.texto-grande{
-    min-width: 250px;
-}
-
-.card-clima{
-    background-color: #282828;
-    height: 495px
-}
-
-.card-clima-menor{
-    background-color: #282828;
-    height: 400px
-}
-
-#primeira{
-    height: 100vh;
-}
-
-.cursive {
-    font-family: cursive;
-}
-
-.pramos{
-    color: white;
-    font-size: 1.3em;
-    text-align:right;
-}
-.btn-info{
-    background-color: #282828 !important;
 }
