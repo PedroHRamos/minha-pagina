@@ -1,5 +1,5 @@
-import { ServicoService } from '../services/servico.service';
-import { JsonDTO } from '../dto/JsonDTO';
+import { ServicoService } from '../../services/servico.service';
+import { JsonDTO } from '../../dto/JsonDTO';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
