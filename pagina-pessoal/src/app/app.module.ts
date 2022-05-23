@@ -15,7 +15,7 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
     AppComponent,
     HomeComponent,
     ClimaComponent,
-    CabecalhoComponent
+    CabecalhoComponent,
   ],
   imports: [
     BrowserModule,
