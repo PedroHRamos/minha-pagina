@@ -1,0 +1,26 @@
+<app-cabecalho></app-cabecalho>
+<br>
+<div class="container">
+    <div class="row">
+        <div>
+            <span>Pontos: {{pointsUserDRAFT}}</span>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="memory-game">
+                <div *ngFor="let image of images" class="image">
+                    <div *ngIf="!image.isCardOutOfGame" class="card center {{image.ifFlipClass}}"
+                        (click)="trataClick(image)">
+                        <div class="face card-front"><img src="{{image.frontFileName}}" class=""></div>
+                        <div class="face card-back"><img src="{{image.backFileName}}" class=""></div>
+                    </div>
+                    <div *ngIf="image.isCardOutOfGame">
+                        <div class="card" id="{{image.id}}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+</div>
