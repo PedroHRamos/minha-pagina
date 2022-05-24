@@ -5,8 +5,8 @@
         <div>
             <span>Pontos: {{pointsUserDRAFT}}</span>
         </div>
-        <div class="col-1"></div>
-        <div class="col-10">
+        <div class="col-md-1 col-1"></div>
+        <div class="col-md-10 col-11">
             <div class="memory-game">
                 <div *ngFor="let image of images" class="image">
                     <div *ngIf="!image.isCardOutOfGame" class="card center {{image.ifFlipClass}}"
@@ -21,6 +21,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-1"></div>
+        <div class="col-md-1 col-0"></div>
     </div>
 </div>

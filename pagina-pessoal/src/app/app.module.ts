@@ -7,7 +7,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { ClimaComponent } from './clima/clima.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
-import {CardManagerComponent} from './core/card-manager/card-manager.component'
+import {CardManagerComponent} from './core/card-manager/card-manager.component';
+import { HardSkillsComponent } from './hard-skills/hard-skills.component'
 
 
 
@@ -18,6 +19,7 @@ import {CardManagerComponent} from './core/card-manager/card-manager.component'
     ClimaComponent,
     CabecalhoComponent,
     CardManagerComponent,
+    HardSkillsComponent,
   ],
   imports: [
     BrowserModule,
