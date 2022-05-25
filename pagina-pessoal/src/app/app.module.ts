@@ -8,7 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { ClimaComponent } from './clima/clima.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import {CardManagerComponent} from './core/card-manager/card-manager.component';
-import { HardSkillsComponent } from './hard-skills/hard-skills.component'
+import { HardSkillsComponent } from './hard-skills/hard-skills.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { PortfolioComponent } from './portfolio/portfolio.component'
 
 
 
@@ -20,6 +22,8 @@ import { HardSkillsComponent } from './hard-skills/hard-skills.component'
     CabecalhoComponent,
     CardManagerComponent,
     HardSkillsComponent,
+    AboutMeComponent,
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,
