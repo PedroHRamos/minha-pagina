@@ -76,7 +76,7 @@ export class ClimaComponent implements OnInit {
       && sky != 'Snow' && sky != 'Clear' && sky != 'Clouds') {
       this.imageFile = 'https://openweathermap.org/img/w/' + this.jsonModel.weather[0].icon + '.png';
     } else {
-      this.imageFile = 'https://opedroramos.com.br/assets/img/' + dayOrNight + '-' + sky + '.png';
+      this.imageFile = 'https://opedroramos.com/assets/img/' + dayOrNight + '-' + sky + '.png';
     }
 
     this.imageFile = this.imageFile;
