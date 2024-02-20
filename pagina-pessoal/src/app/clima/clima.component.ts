@@ -72,12 +72,13 @@ export class ClimaComponent implements OnInit {
     por default deixo o ícone do original para casos mais esquisitos
     */
 
-    if (sky != 'Thunderstorm' && sky != 'Drizzle' && sky != 'Rain'
-      && sky != 'Snow' && sky != 'Clear' && sky != 'Clouds') {
+    //comment this until i get the icons again
+    //if (sky != 'Thunderstorm' && sky != 'Drizzle' && sky != 'Rain'
+    //  && sky != 'Snow' && sky != 'Clear' && sky != 'Clouds') {
       this.imageFile = 'https://openweathermap.org/img/w/' + this.jsonModel.weather[0].icon + '.png';
-    } else {
-      this.imageFile = 'https://opedroramos.com/assets/img/' + dayOrNight + '-' + sky + '.png';
-    }
+    //} else {
+    //  this.imageFile = 'https://opedroramos.com/assets/img/' + dayOrNight + '-' + sky + '.png';
+   // }
 
     this.imageFile = this.imageFile;
 
