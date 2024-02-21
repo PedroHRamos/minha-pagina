@@ -4,11 +4,13 @@ import { HomeComponent } from './home/home.component';
 import { ClimaComponent } from './clima/clima.component';
 import { CardManagerComponent } from './core/card-manager/card-manager.component';
 import { CalculadorPrecoComponent } from './calculador-preco/calculador-preco.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'clima', component: ClimaComponent},
   {path: 'memory', component: CardManagerComponent},
+  {path: 'about-me', component: AboutMeComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'calculador', component: CalculadorPrecoComponent}
 ];

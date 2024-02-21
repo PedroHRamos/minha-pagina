@@ -12,7 +12,6 @@ import { HardSkillsComponent } from './hard-skills/hard-skills.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { CalculadorPrecoComponent } from './calculador-preco/calculador-preco.component';
-import { ExperienceComponent } from './experience/experience.component'
 
 
 
@@ -27,7 +26,6 @@ import { ExperienceComponent } from './experience/experience.component'
     AboutMeComponent,
     PortfolioComponent,
     CalculadorPrecoComponent,
-    ExperienceComponent,
   ],
   imports: [
     BrowserModule,
